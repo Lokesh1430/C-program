@@ -1,0 +1,60 @@
+Write a c program to print fibnocci series using arrays
+#####------------------MODAL-1----------------------------######
+#include <stdio.h>
+
+int main()
+{
+    int arr[100],i,n;
+        printf("ENTER THE ARRAY SIZE: ");
+        scanf("%d",&n);
+         for(i=0;i<n;i++)
+        arr[0]=0;
+        arr[1]=1;
+            for(i=2;i<n;i++)
+            {
+                arr[i]=arr[i-1]+arr[i-2];
+            }
+              printf("THE FIBNOCCI SERIES\n");
+                for(i=0;i<n;i++)
+                 {
+                     printf("%d\t",arr[i]);
+                 }
+
+    return 0;
+}
+
+INPUT :
+        ENTER THE ARRAY SIZE: 12
+
+OUTPUT:
+       THE FIBNOCCI SERIES
+       0	1	1	2	3	5	8	13	21	34	55	89	
+####---------------------------------------------------#####       
+
+**********************MODAL-2************************************
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[100],i;
+        arr[0]=0;
+        arr[1]=1;
+            for(i=2;i<12;i++)
+            {
+                arr[i]=arr[i-1]+arr[i-2];
+            }
+              printf("THE FIBNOCCI SERIES\n");
+                for(i=0;i<12;i++)
+                 {
+                     printf("%d\t",arr[i]);
+                 }
+
+    return 0;
+}
+
+OUTPUT:
+     THE FIBNOCCI SERIES
+     0	1	1	2	3	5	8	13	21	34	55	89	
+     
+******************************************************************     
