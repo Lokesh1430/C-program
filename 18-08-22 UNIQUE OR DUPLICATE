@@ -1,0 +1,49 @@
+Write a c program to print UNIQUE if all elements of array are different otherwise print DUPLICATE 
+
+#include <stdio.h>
+
+int main()
+{
+   int num,n,i,flag=0,arr[100];
+   printf("ENter the size of array: ");
+   scanf("%d",&n);
+   printf("Enter the values:\n");
+   for(i=0;i<n;i++)
+   scanf("%d",&num);
+   while(n!=0)
+   {
+        
+       if(i==num)
+       {
+           flag=1;
+       }
+       n--;
+   }
+    if(flag!=0)
+    printf("Unique");
+    else 
+    printf("Duplocate");
+    return 0;
+}
+
+input:
+ENter the size of array: 5
+Enter the values:
+1
+2
+3
+4
+5
+output:
+Unique
+
+input:
+ENter the size of array: 5
+Enter the values:
+1
+2
+3
+4
+3
+output:
+Duplocate
