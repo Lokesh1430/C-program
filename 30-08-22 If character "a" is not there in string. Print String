@@ -1,0 +1,28 @@
+Read a string and print all character "a" to uppercase and print string. If character "a" is not there in string. Print String 
+#include <stdio.h>
+
+int main() {
+    char cha;
+    scanf("%c",&cha);
+    char str[50];
+   scanf("%s",str);
+   int i; 
+   for(i=0;str[i]!='\0';i++)
+{
+          if(str[i]==cha) 
+          str[i]=str[i]-32;
+         
+          
+   }
+    printf("%s",str);
+
+    return 0;
+}
+
+INPUT AND OUTPUT:
+a
+aditya
+
+OUTPUT:
+
+AdityA
