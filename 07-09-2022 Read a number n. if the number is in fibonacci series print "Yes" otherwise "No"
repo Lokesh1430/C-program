@@ -1,0 +1,37 @@
+Read a number n. if the number is in fibonacci series print "Yes" otherwise "No"
+
+#include <stdio.h>
+
+int main()
+{
+    int n,a=0,b=1,flag;
+     printf("Enter a number: ");
+	 scanf("%d",&n);
+     if(n==a || n==b)
+     {
+         printf("Fibonacci number");
+     }
+     else
+     {
+         flag=a+b;
+         while(flag<n)
+         {
+             a=b;
+             b=flag;
+             flag=a+b;
+         }
+         if(flag==n)
+             printf("Yes");
+         else
+             printf("No");
+     }
+    return 0;
+}
+
+INPUT:  Enter a number: 5
+
+OUTPUT: Yes
+
+INPUT: Enter a number: 4
+
+OUTPUT: No
